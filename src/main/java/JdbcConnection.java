@@ -14,7 +14,7 @@ public class JdbcConnection {
 		Connection con = DriverManager.getConnection(SqlUrl);
 		
 		Statement s = con.createStatement();
-		ResultSet rs = s.executeQuery("SELECT flatowner FROM FLATS_INFO where FlatNo = '103'");
+		ResultSet rs = s.executeQuery("SELECT flatowner FROM FLATS_INFO where FlatNo = '104'");
 		
 		while(rs.next()) {
 			System.out.println(rs.getString("Flatowner"));
